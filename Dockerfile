@@ -13,11 +13,14 @@ RUN yarn install
 # 5. Copie todo o código da aplicação
 COPY . .
 
-# 6. Compile o TypeScript para JavaScript
+# 6. Dê permissão de execução para o diretório atual
+RUN chmod -R 755 /app
+
+# 7. Compile o TypeScript para JavaScript
 RUN yarn run build
 
-# 7. Exponha a porta na qual a aplicação será executada (por exemplo, 3000)
+# 8. Exponha a porta na qual a aplicação será executada (por exemplo, 3000)
 EXPOSE 3000
 
-# 8. Comando para iniciar a aplicação
+# 9. Comando para iniciar a aplicação
 CMD ["yarn", "start"]
