@@ -1,0 +1,144 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita que o conteúdo transborde horizontalmente */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #176303;
+    border-bottom: 1px solid #dee2e6;
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura totais */
+}
+
+.header .logo {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #FFF;
+}
+
+.header .actions {
+    display: flex;
+    align-items: center;
+}
+
+.header .actions form,
+.header .actions a {
+    margin-left: 20px;
+}
+
+.header .actions input[type="number"] {
+    padding: 5px;
+}
+
+.header .actions button,
+.header .actions a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header .actions a {
+    display: inline-block;
+    text-align: center;
+}
+
+.header .actions button {
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.barcode-columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.barcode-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Largura de cada coluna */
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 80vh; /* Altura máxima do container */
+    overflow-y: auto;
+}
+
+.barcode-column h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.barcode-column div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.barcode-actions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.action-button {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Oculta o input de arquivo original */
+input[type="file"] {
+    display: none;
+}
+
+/* Estilo para o botão de seleção de arquivo */
+#file-button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilo para o texto do nome do arquivo */
+#file-name {
+    margin-left: 10px; /* Espaçamento à esquerda do texto */
+    font-style: italic; /* Texto em itálico */
+}
