@@ -81,3 +81,7 @@ export const code128: number[] = [
 export const ean13: number[] = [
     
 ]
+
+export const ean14: number[] = [
+   
+]
